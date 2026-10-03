@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SoftMobiXBD — Screen Time Into Brain Time</title>
-<meta name="description" content="SoftMobiXBD is a Bangladesh-based mobile game studio creating fun, educational games that turn screen time into brain time.">
+<meta name="description" content="SoftMobiXBD is a Bangladesh-based mobile game studio behind Quick Math Quest, Color Rush, NumIQ and Color Flood — fun, educational games that turn screen time into brain time.">
 <meta name="theme-color" content="#1E1B4B">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxRTFCNEIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzMTJFODEiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJtayIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzIyRDNFRSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzhCNUNGNiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjYmcpIi8+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUgMjU2LjAgMjU2LjApIj48cmVjdCB4PSIyMzIuMCIgeT0iNjYuMCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjE1OCIgcng9IjI0LjAiIGZpbGw9InVybCgjbWspIi8+PHJlY3QgeD0iMjMyLjAiIHk9IjI4OC4wIiB3aWR0aD0iNDgiIGhlaWdodD0iMTU4IiByeD0iMjQuMCIgZmlsbD0idXJsKCNtaykiLz48cmVjdCB4PSI2Ni4wIiB5PSIyMzIuMCIgd2lkdGg9IjE1OCIgaGVpZ2h0PSI0OCIgcng9IjI0LjAiIGZpbGw9InVybCgjbWspIi8+PHJlY3QgeD0iMjg4LjAiIHk9IjIzMi4wIiB3aWR0aD0iMTU4IiBoZWlnaHQ9IjQ4IiByeD0iMjQuMCIgZmlsbD0idXJsKCNtaykiLz48L2c+PGNpcmNsZSBjeD0iMjU2LjAiIGN5PSIyNTYuMCIgcj0iMjciIGZpbGw9IiM2N0U4RjkiLz48L3N2Zz4=">
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAEUElEQVRYhcXUX2xTVRzA8e/v3AvtRm9779Z21HUbUobADH/VMcDggzFRkDAZIIgYH3wlvvlan30yPOlijFE0GkJQoolvGiODrGMMxhhtQQFRp3ajHViXll4f1tUBu3fF6HaSm5x7zs353HN+5/cTprVYQ2e4qJcOiSbbsFUrsEhEyrPCZP+fx2lu+nj5PQtcBHWkJLXd6fThCaZ9AUBz447dIvKeiBizAQ+IT+sDyLCtVGcy+e5w5QfK+KciIv8zPjWekTvScfHKOymJNXSGiwtK6TnY+b3j5xY3Lt6ginrp0DzggKz+7cbIy0qUbJ8HHBGw4aCykdh84CAgaq0uiM8J8KxYiWfvDvLJJMXPTiD2vYs64Jqgup7Fu2wZxaNfU0hddvoxU3fbeWTLNsSMkd+6lHGfn/z7n0CJWXHPK7vxrW+nJi/Q8TQ3UlccT0W5HXtpOI2ZEaxRIdS2CePAS4imXPFF+/cQXNWONSqYGYFLP7iGRLMCbXGnmOeup/ArP5a1BL0oeBdHsUMWf124cD+uhMALuwi1dWCMK4yccLs3wbWeL13uA2h1Zlvc7cKNXh0iQIC6QAsLilDT0AQhi/ylC3fhwee7iKzajJETfDlhvD9BqucoYDviIoJmmY/GnfCp8czPQ5hiUW80oReF2lAU26jh1uVLiEDDM51EH9mCMS4YOWHsXC9Didnx8h2YPdVs2+Zc4mPG+k9X7kRzU3vlaFuaNlZifvNsgsEz1eEgyNKWF+1q81wpxYblXTS1biZ58zSFxydnPb3CMvMJrqd76E99UT0ugsSW7LOrwe8tMq2v76WxaysAN45+S/rtY663fSbcMQ2rq3DT22zVb2YcBIkt2W9XjWuCdmAntR3t6N/1E2yY/Pb3Ebjz5Fryp3opHfnqrorpigvoD4J7Du7Gv74db1bwRFeTfisOCLE33mQiuxDvhk2MKw+Fjz6HErPijlkwE+7bt4fQyo2VLCj0nKksVDx5ppIFwRWPUbt3J6iZwnp/qLQ6a03cFVeC2bmLcFsHvtxknt9OJPjx++OVhbLXUhi2D9OMlitmBDsYYGI46YqDoNXXrY274aHtXURWTlY4Y1zI9idInro/z8d+SuG3Der8UfQCeMMPQTDARCrliIsIWr21Ju50TOGtz9G86qnyzhVj53sZ6nMuMqO/JLEwqVvUiF6E2mCE4gIhf/3qjDgIuluMwoEYZkaoyQu/Jns5P+he4QAGB46zriCEW9eTz8OEv4VRBxxAq7fWxZ1iZI9lCUmYkVQfA8nqK9xIJklNXsNb0Lk69A35P7Mz4iKCLI+9ehMk4F5I/mWRcdl5uZ9TgpydJxxELiuED+cFn3xOqEi0+QOQ83ONi0hWX6gdFoAVS19bjiYnQernCLdtW+saGIwfUwDDV7qTJWGLIBfnYudTOIBGuWUyfX80RB7uplQ7AmKCGCLi/Y/wWyCDiHTrC7UD/QPxvin3b6BpUoB9kUTkAAAAAElFTkSuQmCC">
@@ -24,8 +23,9 @@
     .glow-indigo { background: radial-gradient(circle, rgba(49,46,129,0.4) 0%, rgba(0,0,0,0) 70%); }
     @keyframes pulse-slow { 0%,100% { transform: scale(1); opacity: .8; } 50% { transform: scale(1.1); opacity: 1; } }
     .animate-pulse-slow { animation: pulse-slow 8s infinite ease-in-out; }
-    .shot-scroll { scroll-snap-type: x mandatory; -ms-overflow-style: none; scrollbar-width: none; }
-    .shot-scroll::-webkit-scrollbar { display: none; }
+    .shot-scroll { scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #2b2760 transparent; }
+    .shot-scroll::-webkit-scrollbar { height: 6px; }
+    .shot-scroll::-webkit-scrollbar-thumb { background: #2b2760; border-radius: 9999px; }
     .shot-scroll > img { scroll-snap-align: start; }
     .nav-link { position: relative; }
     .nav-link::after { content:''; position:absolute; left:0; bottom:-4px; width:0; height:2px; background:#8B5CF6; transition: width .25s ease; }
@@ -120,20 +120,20 @@
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 max-w-3xl mx-auto">
         <div class="bg-[#15123a]/60 badge border border-[#221f4d] rounded-2xl p-4 md:p-6 shadow-xl">
-            <div class="text-2xl md:text-3xl font-black text-white">2</div>
+            <div class="text-2xl md:text-3xl font-black text-white">4</div>
             <div class="text-[10px] md:text-xs tracking-wider uppercase text-slate-500 font-semibold mt-1">Live on Play Store</div>
         </div>
         <div class="bg-[#15123a]/60 badge border border-[#221f4d] rounded-2xl p-4 md:p-6 shadow-xl">
-            <div class="text-2xl md:text-3xl font-black text-white">4</div>
+            <div class="text-2xl md:text-3xl font-black text-white">2</div>
             <div class="text-[10px] md:text-xs tracking-wider uppercase text-slate-500 font-semibold mt-1">In Development</div>
         </div>
         <div class="bg-[#15123a]/60 badge border border-[#221f4d] rounded-2xl p-4 md:p-6 shadow-xl">
-            <div class="text-2xl md:text-3xl font-black text-[#8B5CF6]">1K+</div>
+            <div class="text-2xl md:text-3xl font-black text-[#8B5CF6]">1.2K+</div>
             <div class="text-[10px] md:text-xs tracking-wider uppercase text-slate-500 font-semibold mt-1">Total Downloads</div>
         </div>
         <div class="bg-[#15123a]/60 badge border border-[#221f4d] rounded-2xl p-4 md:p-6 shadow-xl">
             <div class="text-2xl md:text-3xl font-black text-white">100%</div>
-            <div class="text-[10px] md:text-xs tracking-wider uppercase text-slate-500 font-semibold mt-1">Offline Playable</div>
+            <div class="text-[10px] md:text-xs tracking-wider uppercase text-slate-500 font-semibold mt-1">Free to Play</div>
         </div>
     </div>
 </section>
@@ -145,7 +145,7 @@
             <i class="fa-solid fa-circle-check mr-1"></i> Published &amp; Live
         </span>
         <h2 class="text-3xl md:text-4xl font-black text-white mb-3">Games You Can Play Right Now</h2>
-        <p class="text-slate-400 max-w-xl mx-auto">Free to download, built for offline play, and available worldwide on Google Play.</p>
+        <p class="text-slate-400 max-w-xl mx-auto">Four free games, built to play offline and available worldwide on Google Play.</p>
     </div>
 
     <!-- Quick Math Quest -->
@@ -155,24 +155,24 @@
                 <div class="flex items-start gap-4 mb-4">
                     <img src="https://play-lh.googleusercontent.com/5wqNVCtkb-8Dp5RDAxU1BR3UGqltn-41oa_NVvPAgFrEGEcImg0VRHyfxEgNu3S1xvEJ_jAWGqN31SNMheUG=s128" alt="Quick Math Quest icon" class="w-16 h-16 rounded-2xl shadow-lg flex-shrink-0">
                     <div>
-                        <h3 class="text-2xl font-bold text-white">Quick Math Quest</h3>
-                        <p class="text-[#a78bfa] text-sm font-medium">Master quick math puzzles, algebra, sudoku &amp; the 2028 tile challenge!</p>
+                        <h3 class="text-2xl font-bold text-white">Quick Math Quest <span class="text-slate-500 font-medium text-base">(Brain Games)</span></h3>
+                        <p class="text-[#a78bfa] text-sm font-medium">20 free math brain games in one app — and every one of them works offline.</p>
                         <div class="flex flex-wrap gap-2 mt-2 text-xs text-slate-400">
                             <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-graduation-cap mr-1"></i>Educational</span>
                             <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-download mr-1"></i>1K+ downloads</span>
                             <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-child mr-1"></i>Rated 3+</span>
-                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-code-branch mr-1"></i>v2.0.2</span>
+                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-code-branch mr-1"></i>v2.2.2</span>
                         </div>
                     </div>
                 </div>
                 <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                    A neon-chalk styled math arcade with <strong class="text-slate-200">12 game modes</strong> — Simple Math, Algebraic Math, Find X/Y/Z, Time Challenge, Time Limit, True or False, Drag &amp; Match, Draw to Match, Sudoku, 2048, 2248, and Match 10. Fully randomized questions keep every session fresh, with daily streaks, achievement badges, and 100% offline play. Built for students aged 13–17, but sharp enough for anyone who wants a daily brain workout.
+                    A neon-styled math arcade with <strong class="text-slate-200">20 game modes</strong> across Quick Math, Brain Puzzles, Touch &amp; Merge, and Learn &amp; Play — from a two-second addition check all the way to multi-step algebra. Eight modes are brand new, including a shared <strong class="text-slate-200">Daily Challenge</strong> (same ten questions for everyone, one try), Cross Math, Make 24, Equation Guess, Times Tables, and two-player Math Duel. Endless randomized questions, daily streaks, achievement badges, hints, undo and auto-save — 100% offline, no sign-up, and built for every age from first sums to daily adult brain workouts.
                 </p>
                 <div class="flex flex-wrap gap-3">
                     <a href="https://play.google.com/store/apps/details?id=com.softmobixbd.math_game" target="_blank" rel="noopener" class="btn-gradient inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-full transition-all active:scale-95">
                         <i class="fa-brands fa-google-play"></i> Get it on Google Play
                     </a>
-                    <a href="https://softmobixbd.github.io/quickmath_about" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-[#2b2760] hover:border-[#8B5CF6] text-slate-200 text-sm font-semibold px-5 py-2.5 rounded-full transition-all active:scale-95">
+                    <a href="https://softmobixbd.github.io/quickmath_about/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-[#2b2760] hover:border-[#8B5CF6] text-slate-200 text-sm font-semibold px-5 py-2.5 rounded-full transition-all active:scale-95">
                         <i class="fa-solid fa-circle-info"></i> About the App
                     </a>
                     <a href="https://softmobixbd.github.io/quickmath_about/quickmath_privacy_policy" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-slate-500 hover:text-slate-300 text-sm px-2 py-2.5 transition-all">
@@ -180,80 +180,58 @@
                     </a>
                 </div>
             </div>
-            <div class="md:w-1/3 flex flex-wrap content-start gap-2 md:justify-end">
-                <span class="text-xs uppercase tracking-widest text-slate-500 font-semibold w-full md:text-right mb-1">12 modes in one app</span>
+            <div class="md:w-1/3 flex flex-col gap-3">
+                <img src="https://play-lh.googleusercontent.com/XouA8HOU9UWrAUEzIJ-W61zjFys0C5MM8qLDrZ9W3WPCk5EFqveYBn88elIzvRQwYD9sycuFtzcB_UsyVR63=w640-rw" width="640" height="312" class="w-full h-auto rounded-2xl border border-[#221f4d] shadow-lg" loading="lazy" alt="Quick Math Quest feature graphic">
+                <span class="text-xs uppercase tracking-widest text-slate-500 font-semibold md:text-right mt-1">20 modes in one app</span>
                 <div class="grid grid-cols-2 gap-2 w-full text-xs text-slate-300">
-                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Simple Math</div>
-                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Algebraic Math</div>
-                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Find X, Y, Z</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Daily Challenge</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Cross Math</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Make 24</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Equation Guess</div>
                     <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Sudoku</div>
                     <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">2048 &amp; 2248</div>
-                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Match 10</div>
-                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Time Challenge</div>
-                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Drag &amp; Match</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Times Tables</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Math Duel</div>
                 </div>
             </div>
         </div>
-        <div class="shot-scroll flex gap-3 overflow-x-auto mt-6 pb-2">
-            <img src="https://play-lh.googleusercontent.com/gIp97BKyxS-9NXoBJ8vL1a6Mcz3Ruk1ROGljLP1_z7brwbhfku4vuTrZn_9DL3_tX0p21RsjcsM4Dwos-0Xd=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest screenshot">
-            <img src="https://play-lh.googleusercontent.com/dTCZmqWLAztMvCDfe9jLXXgG73eDOFpG0P3Wne7WaJElI7HGScTdSAmXrOUcknziRJ4jrYdnseYxh9PCHyx2mw=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest screenshot">
-            <img src="https://play-lh.googleusercontent.com/1T9A70TJMlofu4b5fUWaTgSMf1l17DuzIB45CW5IVmHlkPiju7DSvp6bn8kKfvVmQ5aUktKCQV2UKIOyIkgPvg=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest screenshot">
-            <img src="https://play-lh.googleusercontent.com/T2lt8YBW7ArEsIvq9hbvR2jqiIFylcQlhRbDtHu0Ab9je621Ac6WydW9EBiAygVdudaboMzeku2-pzJup-KSnuA=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest screenshot">
-            <img src="https://play-lh.googleusercontent.com/KRbyL_wiptCTZLub5-Nl-aY81LCJ0t164SDtukYvlogeEfyPVAowvu3m2Dn4lyhkgcFurGIDreEZ_AxZ4_UG=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest screenshot">
-            <img src="https://play-lh.googleusercontent.com/rp6FYkDBY6HK0uMlI0y4U09yZ1N1ZgrsQGoReGC8BQKsC1haJkVCclPtSnij6yM5QNgW9WlHIP5hSI2oyOMIWQ=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest screenshot">
+        <div class="shot-scroll flex gap-3 overflow-x-auto mt-6 pb-3">
+            <img src="https://play-lh.googleusercontent.com/gIp97BKyxS-9NXoBJ8vL1a6Mcz3Ruk1ROGljLP1_z7brwbhfku4vuTrZn_9DL3_tX0p21RsjcsM4Dwos-0Xd=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest — All math modes in one place">
+            <img src="https://play-lh.googleusercontent.com/AOAlLo1sQGjNsxTinGoo9Vn4AGM5ghjTREo5JArxKhzxWTtsmAlJuGszRQVmA3Kujx-l8c237s80XI_Q1pEd9A=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest — 2248 chain and merge">
+            <img src="https://play-lh.googleusercontent.com/dTCZmqWLAztMvCDfe9jLXXgG73eDOFpG0P3Wne7WaJElI7HGScTdSAmXrOUcknziRJ4jrYdnseYxh9PCHyx2mw=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest — Strategic beginner sudoku">
+            <img src="https://play-lh.googleusercontent.com/nOSXmvp9NjoAX7v-R2R0yfRvY6ckls26oAYuTnkDR7f5D8eSSYOUnoekCh0sYacJQGwSGeXrRxyF20YQdUK92A=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest — Add up to 10 and clear the board">
+            <img src="https://play-lh.googleusercontent.com/1T9A70TJMlofu4b5fUWaTgSMf1l17DuzIB45CW5IVmHlkPiju7DSvp6bn8kKfvVmQ5aUktKCQV2UKIOyIkgPvg=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest — Action-focused swipe merge">
+            <img src="https://play-lh.googleusercontent.com/T2lt8YBW7ArEsIvq9hbvR2jqiIFylcQlhRbDtHu0Ab9je621Ac6WydW9EBiAygVdudaboMzeku2-pzJup-KSnuA=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest — Slide and solve equations">
+            <img src="https://play-lh.googleusercontent.com/KRbyL_wiptCTZLub5-Nl-aY81LCJ0t164SDtukYvlogeEfyPVAowvu3m2Dn4lyhkgcFurGIDreEZ_AxZ4_UG=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest — Quick matching challenges">
+            <img src="https://play-lh.googleusercontent.com/rp6FYkDBY6HK0uMlI0y4U09yZ1N1ZgrsQGoReGC8BQKsC1haJkVCclPtSnij6yM5QNgW9WlHIP5hSI2oyOMIWQ=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Quick Math Quest — Uncover the hidden variables">
         </div>
     </div>
 
     <!-- Color Rush -->
-    <div class="app-card border border-[#221f4d] rounded-3xl p-6 md:p-10 fade-up">
+    <div class="app-card border border-[#221f4d] rounded-3xl p-6 md:p-10 mb-10 fade-up">
         <div class="flex flex-col md:flex-row gap-8">
             <div class="md:w-2/3">
                 <div class="flex items-start gap-4 mb-4">
-                    <div class="w-16 h-16 rounded-2xl shadow-lg flex-shrink-0 bg-[#1d1d1f] p-2">
-                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Color Rush logo" class="w-full h-full">
-                            <defs>
-                                <radialGradient id="crBallGlow" cx="50%" cy="50%" r="50%">
-                                    <stop offset="0%" stop-color="#ffffff" />
-                                    <stop offset="55%" stop-color="#e8f4ff" />
-                                    <stop offset="100%" stop-color="#9ec9ff" stop-opacity="0" />
-                                </radialGradient>
-                                <linearGradient id="crStreak" x1="0" y1="0" x2="0" y2="1">
-                                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85" />
-                                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
-                                </linearGradient>
-                            </defs>
-                            <rect x="96.5" y="112" width="7" height="66" rx="3.5" fill="url(#crStreak)" />
-                            <circle cx="100" cy="100" r="30" fill="url(#crBallGlow)" opacity="0.65" />
-                            <circle cx="100" cy="100" r="15" fill="#ffffff" />
-                            <g fill="none" stroke-width="14" stroke-linecap="round">
-                                <path d="M 60.9 158.0 A 70 70 0 0 1 31.1 112.2" stroke="#4CAF50" />
-                                <path d="M 30.4 107.3 A 70 70 0 0 1 46.4 55.0"  stroke="#2196F3" />
-                                <path d="M 49.7 51.4  A 70 70 0 0 1 100 30"     stroke="#FF9800" />
-                                <path d="M 104.9 30.2 A 70 70 0 0 1 153.6 55.0" stroke="#9C27B0" />
-                                <path d="M 156.6 58.9 A 70 70 0 0 1 168.9 112.2" stroke="#E91E63" />
-                                <path d="M 167.9 116.9 A 70 70 0 0 1 139.1 158.0" stroke="#A1887F" />
-                            </g>
-                        </svg>
-                    </div>
+                    <img src="https://play-lh.googleusercontent.com/AIHXvv7Oal5mgX9yUoxxfDlrOn6ueoTX4wMdmeTM4JNdCfQBZsp0W1aAqvOIv-uRex9giK5y0kNsUtho6ET_=s128" alt="Color Rush icon" class="w-16 h-16 rounded-2xl shadow-lg flex-shrink-0">
                     <div>
-                        <h3 class="text-2xl font-bold text-white">Color Rush <span class="text-slate-500 font-medium text-base">(Switch Colors)</span></h3>
+                        <h3 class="text-2xl font-bold text-white">Color Rush <span class="text-slate-500 font-medium text-base">(Tap &amp; Switch Color)</span></h3>
                         <p class="text-[#a78bfa] text-sm font-medium">Tap. Match. Survive.</p>
                         <div class="flex flex-wrap gap-2 mt-2 text-xs text-slate-400">
                             <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-bolt mr-1"></i>Casual</span>
                             <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-download mr-1"></i>100+ downloads</span>
                             <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-child mr-1"></i>Rated 3+</span>
-                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-wifi mr-1"></i>100% Offline</span>
+                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-code-branch mr-1"></i>v1.1.1</span>
                         </div>
                     </div>
                 </div>
                 <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                    A fast, one-tap color-matching reflex game. Bounce your ball through rotating obstacles that only let matching colors pass. <strong class="text-slate-200">6 game modes</strong> (Classic, Clock, Flip Flop, Escape, Lucky, Launch), <strong class="text-slate-200">21 obstacle types</strong>, <strong class="text-slate-200">22 ball skins</strong>, 3 trail styles, and 100 levels — all earned by playing, no in-app purchases, no sign-up, fully offline.
+                    A fast, one-tap color-matching reflex game. Bounce your ball through spinning wheels, swinging bars, counter-rotating rings and <strong class="text-slate-200">20+ neon obstacles</strong> — only your own color gets through. <strong class="text-slate-200">6 game modes</strong> with 100 hand-tuned levels plus an endless Classic climb, <strong class="text-slate-200">22 ball skins</strong> and 3 trail styles earned with coins, and Bronze, Silver &amp; Gold medals to chase. No in-app purchases, no sign-up, fully offline — and tuned to run smoothly on low-end phones.
                 </p>
                 <div class="flex flex-wrap gap-3">
                     <a href="https://play.google.com/store/apps/details?id=com.softmobixbd.color_rush" target="_blank" rel="noopener" class="btn-gradient inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-full transition-all active:scale-95">
                         <i class="fa-brands fa-google-play"></i> Get it on Google Play
                     </a>
-                    <a href="https://softmobixbd.github.io/color_rush_about" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-[#2b2760] hover:border-[#8B5CF6] text-slate-200 text-sm font-semibold px-5 py-2.5 rounded-full transition-all active:scale-95">
+                    <a href="https://softmobixbd.github.io/color_rush_about/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-[#2b2760] hover:border-[#8B5CF6] text-slate-200 text-sm font-semibold px-5 py-2.5 rounded-full transition-all active:scale-95">
                         <i class="fa-solid fa-circle-info"></i> About the App
                     </a>
                     <a href="https://softmobixbd.github.io/color_rush_about/privacy-policy.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-slate-500 hover:text-slate-300 text-sm px-2 py-2.5 transition-all">
@@ -261,8 +239,9 @@
                     </a>
                 </div>
             </div>
-            <div class="md:w-1/3 flex flex-wrap content-start gap-2 md:justify-end">
-                <span class="text-xs uppercase tracking-widest text-slate-500 font-semibold w-full md:text-right mb-1">Six ways to play</span>
+            <div class="md:w-1/3 flex flex-col gap-3">
+                <img src="https://play-lh.googleusercontent.com/nYTXlhWM1lScroWCP-YBk4cYp5PMvu1LdceiuGdOEuNz8nVO4FusJcFm6Y4EcfSwUgzpamJMAi_8I4Vl91B5=w640-rw" width="640" height="312" class="w-full h-auto rounded-2xl border border-[#221f4d] shadow-lg" loading="lazy" alt="Color Rush feature graphic">
+                <span class="text-xs uppercase tracking-widest text-slate-500 font-semibold md:text-right mt-1">Six ways to play</span>
                 <div class="grid grid-cols-2 gap-2 w-full text-xs text-slate-300">
                     <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Classic</div>
                     <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Clock</div>
@@ -273,12 +252,131 @@
                 </div>
             </div>
         </div>
-        <div class="shot-scroll flex gap-3 overflow-x-auto mt-6 pb-2">
-            <img src="https://play-lh.googleusercontent.com/D0rKU_fOMri3UO7XQ7SZOPCM-aWyoN5z8aEoP61_cCyaDwvCKTUI7koIRp9d7QaZAyWJhIRPrLGcMuVNegCJN-M=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush screenshot">
-            <img src="https://play-lh.googleusercontent.com/7QSqYcwX9SW87RTA-chXWdesWXuPwaqohnYHg14S02uTjVRQo16wH80urKsHSey6_jVoLgcjj5hXB7ueyNCZXA=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush screenshot">
-            <img src="https://play-lh.googleusercontent.com/N04tmjnJ3tbgSWefQ7EjAhGzfIhHEzdUCPOudwD9jXhNDL4ip28B-RiCXxDoz4EIiXLcF6ygt6sVsOygUeGhpw=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush screenshot">
-            <img src="https://play-lh.googleusercontent.com/M2ef07zq40fWlt_rdKmm0WI9bwpHaI3HQQ36ufzlsq6ixv8wx0a6LqVbX3Z7CEIDQHvV94QlnW34AH9P1a2A--0=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush screenshot">
-            <img src="https://play-lh.googleusercontent.com/aitOKgL2agbiyGQaHxOM3yUmK8hoZQVBeDqJy3QT2nGQnWuVV3aApkV9ik3mw2Q7NAiqvt3T8oKGESlrNAOzVmQ=w400-h225" class="h-40 md:h-52 rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush screenshot">
+        <div class="shot-scroll flex gap-3 overflow-x-auto mt-6 pb-3">
+            <img src="https://play-lh.googleusercontent.com/Io6nLa09UjlknNvPlzOA1k_cMKrP_PSkScgEjOOlPUmh6GuvpKdYrKBnVH1hvbQAgJ_b4ERBmbLiZUszriHboTk=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush — Only your color gets through">
+            <img src="https://play-lh.googleusercontent.com/1_yTUYkduKEmfmzRCME1YoZARtAyXiiJB2QwANoYJOoC-r9jVklMipHPf1A6OXhamwbiGfhHqx4BuudV4YaN1w=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush — Unlock 22 ball skins">
+            <img src="https://play-lh.googleusercontent.com/oI5PSfKDEjKsKWSKYyCbj86UTCZY8ECsys7Id5314N8l1LnEKNPuay2tv-j-o0wdVPV8u437xhEDyahK7P0JTh4=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush — 6 ways to play">
+            <img src="https://play-lh.googleusercontent.com/i8zpbApI1npeDEfkl26a42tJKtB-wyOnCA7RealEPQCOjxJN3mBtrkLbus24rQPNfOeS4oM3jvy17aA-jeD8iQE=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush — Tap to turn the gate">
+            <img src="https://play-lh.googleusercontent.com/iEoXH6drB4l3GB-tvTc59sZtfNK8U1_1sXzAj2v841xQ4Bhm5g-qW52MT55NpHhGXwoiUoWqb2gfJ2we5NZsvQ=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush — One tap. Pure reflex.">
+            <img src="https://play-lh.googleusercontent.com/PhnYYvajDznGpIVEyWK4Y6ybjlJEohq5ClPN9NJU1rgStPVP_OdvBC1DL-ndlDScZyiUWuXRqpMSYraBR-RemA=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush — Drag to steer">
+            <img src="https://play-lh.googleusercontent.com/D_Ihce0jsWnGCrHamRlOiypxwfPtwZcIGS1F5rHqd5u9TdI8EWExoYuozJIGL712z5zRHfYlDM-EW_08-fiMPQ=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush — One tap, skip and smile">
+            <img src="https://play-lh.googleusercontent.com/6PMoImghhY4OvGPz1VY2rCaOZZtVwCgr5d8NGzjCwXZWsLUNtFyQ5KnMpUfJNVeqOZgNpOGOczn1rOM3FxrlQg=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Rush — 100 levels to beat">
+        </div>
+    </div>
+
+    <!-- NumIQ -->
+    <div class="app-card border border-[#221f4d] rounded-3xl p-6 md:p-10 mb-10 fade-up">
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-2/3">
+                <div class="flex items-start gap-4 mb-4">
+                    <img src="https://play-lh.googleusercontent.com/ytQcf5hKKOi1_ulLZEfwF55f93tUEP_UfdRwh0Qva1YLptNp5VQueCrFGrQE22ZyKdaIwxO3T97y-B764q0t6Q=s128" alt="NumIQ icon" class="w-16 h-16 rounded-2xl shadow-lg flex-shrink-0">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">NumIQ <span class="text-slate-500 font-medium text-base">(Math Puzzle &amp; IQ Game)</span> <span class="align-middle ml-1 inline-block bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border border-emerald-500/20">New</span></h3>
+                        <p class="text-[#a78bfa] text-sm font-medium">Sharpen your mind, one puzzle a day.</p>
+                        <div class="flex flex-wrap gap-2 mt-2 text-xs text-slate-400">
+                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-puzzle-piece mr-1"></i>Puzzle</span>
+                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-download mr-1"></i>100+ downloads</span>
+                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-child mr-1"></i>Rated 3+</span>
+                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-people-arrows mr-1"></i>1v1 Battle Mode</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    A math and logic puzzle game built for a real mental workout — not ads disguised as a game. Solve number sequences, equations, geometric patterns and addition pyramids, take a fresh <strong class="text-slate-200">Daily Challenge</strong> tuned to your level, and go head-to-head in live <strong class="text-slate-200">1v1 Battle Mode</strong> against another player (or a skill-matched bot when no one&#39;s online). Difficulty adapts across five levels, an IQ-style score tracks your growth, and streaks, XP, coins and badges reward every solve. Plays offline and syncs when you reconnect — no account needed to start.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://play.google.com/store/apps/details?id=com.numiq.mathpuzzle" target="_blank" rel="noopener" class="btn-gradient inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-full transition-all active:scale-95">
+                        <i class="fa-brands fa-google-play"></i> Get it on Google Play
+                    </a>
+                    <a href="https://softmobixbd.github.io/NumIQ/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-[#2b2760] hover:border-[#8B5CF6] text-slate-200 text-sm font-semibold px-5 py-2.5 rounded-full transition-all active:scale-95">
+                        <i class="fa-solid fa-circle-info"></i> About the App
+                    </a>
+                    <a href="https://softmobixbd.github.io/NumIQ/privacy-policy.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-slate-500 hover:text-slate-300 text-sm px-2 py-2.5 transition-all">
+                        <i class="fa-solid fa-shield-halved"></i> Privacy Policy
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/3 flex flex-col gap-3">
+                <img src="https://play-lh.googleusercontent.com/h7VYHqAfGKr0ZyDF67x0rEEw2TMcqjWaBR7p7b1_GNpzv-cdHJOIhQUwqDQSkeyHtakdFjnkDq0nuz-T0aPDPw=w640-rw" width="640" height="312" class="w-full h-auto rounded-2xl border border-[#221f4d] shadow-lg" loading="lazy" alt="NumIQ feature graphic">
+                <span class="text-xs uppercase tracking-widest text-slate-500 font-semibold md:text-right mt-1">What you&#39;ll play</span>
+                <div class="grid grid-cols-2 gap-2 w-full text-xs text-slate-300">
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Number Sequences</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Equations</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Geometric Puzzles</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Number Pyramids</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Daily Challenge</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">1v1 Battle Mode</div>
+                </div>
+                <p class="text-xs text-slate-500 md:text-right">Optional <span class="text-slate-300 font-semibold">NumIQ Pro</span> goes ad-free and adds 30 bonus puzzles every day.</p>
+            </div>
+        </div>
+        <div class="shot-scroll flex gap-3 overflow-x-auto mt-6 pb-3">
+            <img src="https://play-lh.googleusercontent.com/J0QxorPFgCNr9iV_c0yZBdoQii_ntURMtULIrPpOe8-WqFd8Q0nFA5uTm2qMPBk_ycAXp6RUl6SXiXaEC4Y0QA=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="NumIQ — A new puzzle every day">
+            <img src="https://play-lh.googleusercontent.com/NOP4JAaMMTr8R8C828BPsEC3DUctt2r1xtbQSG1_NOu65AahLEhv_ubBFmLeEm2tWUBHNJlbjYZ4KzwK8QS1=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="NumIQ — Sharpen your mind, one puzzle at a time">
+            <img src="https://play-lh.googleusercontent.com/0_RP7qJoEVk_HHXdYcaEQFSmtZTgYLzzQZBUffHJKHQtb7bn7_bxl4InWbwyMNczjV3Jwe9Ta5xcxLdsi_etSnk=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="NumIQ — 6 puzzle types, endless variety">
+            <img src="https://play-lh.googleusercontent.com/T2EnlzfJQ0QJvKwVfSysJCAtZPjOS72s06o9B3PVbSoCrGu5nnKZTZnmzwEX9lrMJhgb_mMoeCMwJJTxAQPBeiQ=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="NumIQ — Keep your streak alive">
+            <img src="https://play-lh.googleusercontent.com/0-Uwx6wgwTSx-HabkY__UxYls1-_UveI2tanVp6FWRLxu-rrwXO_KMGFWFsJME08URpmqKapfEzLNiArZH1M9w=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="NumIQ — Your stats, your journey">
+            <img src="https://play-lh.googleusercontent.com/KawC7Rha8my8nV6EcGWFKlRS5dAPT3h6kVJc9VwPwgiDULfy4ZWGtc79ruZ3MDHK2taFJa09yBn9lqeaQ6K20dI=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="NumIQ — Earn badges as you improve">
+            <img src="https://play-lh.googleusercontent.com/SaH1vt2fZ8zzneV1dOGYwbnN8SFwrECzGUrYWJmJ_pyzPPK1mOMUVW6KMSBHNQWDQobufhaAeYIFP1y34BARgw=h560-rw" width="259" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="NumIQ — Race another player in real time">
+        </div>
+    </div>
+
+    <!-- Color Flood -->
+    <div class="app-card border border-[#221f4d] rounded-3xl p-6 md:p-10 fade-up">
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-2/3">
+                <div class="flex items-start gap-4 mb-4">
+                    <img src="https://play-lh.googleusercontent.com/aNowlTjdpfYBoJ0F4oAf9vJxG-JoTFcfu93cc3uUWBDdT6J9DSnPZBZ_lCblyyjB9MN1oFgI2Ez1vCWptluI=s128" alt="Color Flood icon" class="w-16 h-16 rounded-2xl shadow-lg flex-shrink-0">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Color Flood <span class="text-slate-500 font-medium text-base">(Flood It Puzzle)</span> <span class="align-middle ml-1 inline-block bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border border-emerald-500/20">New</span></h3>
+                        <p class="text-[#a78bfa] text-sm font-medium">Every board is winnable. Prove it in par.</p>
+                        <div class="flex flex-wrap gap-2 mt-2 text-xs text-slate-400">
+                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-chess-board mr-1"></i>Strategy</span>
+                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-download mr-1"></i>10+ downloads</span>
+                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-child mr-1"></i>Rated 3+</span>
+                            <span class="bg-[#1a1840] px-2.5 py-1 rounded-full"><i class="fa-solid fa-code-branch mr-1"></i>v2.0.1</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    A flood-fill strategy puzzle: pick a color, and every matching tile touching your corner joins you — turn the whole board one color before the moves run out. <strong class="text-slate-200">Every board is solver-checked to be winnable</strong> before you see it, and a beam-search solver sets a par to earn your stars against. Three ways to play — Journey, Daily Challenge and Zen — across four tiers from a relaxed 10×10 to a ruthless 22×22. 12 contrast-validated palettes, a colorblind glyph mode, no banner ads, and no account or internet needed.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://play.google.com/store/apps/details?id=com.softmobixbd.color_foold" target="_blank" rel="noopener" class="btn-gradient inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-full transition-all active:scale-95">
+                        <i class="fa-brands fa-google-play"></i> Get it on Google Play
+                    </a>
+                    <a href="https://softmobixbd.github.io/color_flood_about/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-[#2b2760] hover:border-[#8B5CF6] text-slate-200 text-sm font-semibold px-5 py-2.5 rounded-full transition-all active:scale-95">
+                        <i class="fa-solid fa-circle-info"></i> About the App
+                    </a>
+                    <a href="https://softmobixbd.github.io/color_flood_about/privacy_policy.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-slate-500 hover:text-slate-300 text-sm px-2 py-2.5 transition-all">
+                        <i class="fa-solid fa-shield-halved"></i> Privacy Policy
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/3 flex flex-col gap-3">
+                <img src="https://play-lh.googleusercontent.com/4JTAnI51DLyNDQLSlOHIPso9M2iPslgKQ-xGhMSrrEY4OxCocMpqgHaQVKA5ufFtd-qsy3mG7ercaav9KaN9=w640-rw" width="640" height="312" class="w-full h-auto rounded-2xl border border-[#221f4d] shadow-lg" loading="lazy" alt="Color Flood feature graphic">
+                <span class="text-xs uppercase tracking-widest text-slate-500 font-semibold md:text-right mt-1">3 modes · 4 tiers</span>
+                <div class="grid grid-cols-2 gap-2 w-full text-xs text-slate-300">
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Journey</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Daily Challenge</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Zen</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Colorblind Glyphs</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Relaxed · 10×10</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Steady · 14×14</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Sharp · 18×18</div>
+                    <div class="bg-[#15123a]/60 border border-[#221f4d] rounded-lg px-3 py-2">Ruthless · 22×22</div>
+                </div>
+            </div>
+        </div>
+        <div class="shot-scroll flex gap-3 overflow-x-auto mt-6 pb-3">
+            <img src="https://play-lh.googleusercontent.com/AHQ9h0ZRle4WHjQDBhTMbrQFr-CwcMDTTTpUYUz5-NjCOwvs39in0dQ2eQOBvDUZmOLir_U91CWNfEdH-vmZMA=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Flood — Every board is winnable">
+            <img src="https://play-lh.googleusercontent.com/mu0pnZHkLBMd4Mk-3c95oYV-sAAc8MaMJU4raGt2L0KPC_ciY4vYIHJQtuBZpzn-u3iLNP0F_HNF7glbG9w7kQ=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Flood — Beat par, earn three stars">
+            <img src="https://play-lh.googleusercontent.com/vs-nJB7vd4OoGaXRM65z6e4lRN2dvUyw6KRePDOTJq_y87RA-f1sy4aHR7xtFN5BuKQCKkUkgzmChD0_FfkEvg=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Flood — Preview every move">
+            <img src="https://play-lh.googleusercontent.com/anE8PP3WBw6da8X62o22cZJuawH64PEWXusTjWqS4LWGxWJiWuWhSLY7pS5zVBgTKuwM_PiJEQ9ELQLWSuSUew=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Flood — Three ways to play">
+            <img src="https://play-lh.googleusercontent.com/k2R6HaJJ3MqTGcC219Uu51jSai-uySjac0X6eur1hpI4ewyUWFCagB0xioOGUsmk07d77F0IoquPWCgfvPYL=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Flood — A new board every day">
+            <img src="https://play-lh.googleusercontent.com/3xOzWzOkpTLvNrRGEfhZ3kOmaUw1cfPPKSS-MkbW8Jd53TCeXWOXZlM4g28vX0BmcH8Fa8bjnWVvbadX-CSsxA=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Flood — A glyph on every tile">
+            <img src="https://play-lh.googleusercontent.com/2EPu045d7bsl6AcwxXRvDH0FndUHfSXDZeUgvp9enI-WTHdJYllwTAGf4K0Rrbmq_4TLw5HMxpECIMPJEP4gzw=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Flood — 12 palettes, light or dark">
+            <img src="https://play-lh.googleusercontent.com/WSR-6RT7QA5LD8bOcC8neV9katiN8FiwNYekfQvVddMsgFdE7s58kIp5aLVvZOL3e9ryDzyGceZVNvtoTer7=h560-rw" width="280" height="560" class="h-64 md:h-80 w-auto rounded-xl border border-[#221f4d] flex-shrink-0" loading="lazy" alt="Color Flood — 22×22, 47 moves, good luck">
         </div>
     </div>
 </section>
@@ -293,81 +391,51 @@
         <p class="text-slate-400 max-w-xl mx-auto">A look inside our pipeline — games in active development, with landing pages and policies already taking shape ahead of launch.</p>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Color Flood -->
-        <div class="app-card relative overflow-hidden border border-[#221f4d] rounded-3xl p-6 fade-up">
-            <span class="ribbon absolute top-0 right-0 bg-amber-500 text-[#1E1B4B] text-[10px] font-bold uppercase tracking-wider px-3 py-1">Coming Soon</span>
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-fuchsia-500 via-sky-400 to-emerald-400 flex items-center justify-center mb-4 shadow-lg">
-                <i class="fa-solid fa-fill-drip text-white text-lg"></i>
+    <div class="grid md:grid-cols-2 gap-6">
+        <!-- NumXross -->
+        <div class="app-card relative overflow-hidden border border-[#221f4d] rounded-3xl p-6 md:p-8 fade-up">
+            <span class="ribbon absolute top-0 right-0 bg-amber-500 text-[#1E1B4B] text-[10px] font-bold uppercase tracking-wider px-3 py-1">In Development</span>
+            <div class="flex items-center gap-4 mb-4">
+                <img src="https://softmobixbd.github.io/numxross/numxross_mark.png" alt="NumXross logo" class="w-12 h-12 rounded-xl bg-[#0D1525] border border-[#221f4d] p-1.5 shadow-lg flex-shrink-0">
+                <div>
+                    <h3 class="text-xl font-bold text-white">NumXross</h3>
+                    <p class="text-[#a78bfa] text-sm font-medium">Where numbers meet the cross.</p>
+                </div>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">Color Flood</h3>
             <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                A minimalist, addictive strategy puzzle — flood the entire grid into one color within a limited number of moves. Four difficulty levels, from a forgiving 10×10 grid to an extreme 22×22 challenge.
+                A crossword built on numbers instead of letters. Place number tiles so every row and every column satisfies its equation, using standard order of operations. Every puzzle is verified to have exactly one solution before it's ever served, and lazy ×1 or +0 filler is filtered out at generation time.
             </p>
             <ul class="text-xs text-slate-400 space-y-1.5 mb-5">
-                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Easy → Extreme difficulty tiers</li>
-                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Grids from 10×10 up to 22×22</li>
-                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Free to play, no in-app purchases</li>
+                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Easy, Medium, Hard &amp; Expert grids</li>
+                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Shared Daily Challenge — four puzzles a day, global leaderboard</li>
+                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Streaks, achievements &amp; a personal NumXross IQ score</li>
+                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Zero forced interstitials, unlimited free undo, 3 free hints per puzzle</li>
+                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Offline play with light, dark &amp; AMOLED themes</li>
             </ul>
-            <a href="https://softmobixbd.github.io/color_flood_about" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[#8B5CF6] hover:text-white text-sm font-semibold transition-colors">
-                Learn more <i class="fa-solid fa-arrow-right text-xs"></i>
-            </a>
-        </div>
-
-        <!-- NumIQ -->
-        <div class="app-card relative overflow-hidden border border-[#221f4d] rounded-3xl p-6 fade-up">
-            <span class="ribbon absolute top-0 right-0 bg-amber-500 text-[#1E1B4B] text-[10px] font-bold uppercase tracking-wider px-3 py-1">Coming Soon</span>
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 via-[#8B5CF6] to-cyan-400 flex items-center justify-center mb-4 shadow-lg">
-                <i class="fa-solid fa-brain text-white text-lg"></i>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">NumIQ</h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                A daily math puzzle game built for a mental workout — number sequences, equations, geometric puzzles, and number pyramids in bite-sized daily challenges, plus a head-to-head Battle Mode.
-            </p>
-            <ul class="text-xs text-slate-400 space-y-1.5 mb-5">
-                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Daily challenges, XP, streaks &amp; badges</li>
-                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Battle Mode — race an opponent</li>
-                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>NumIQ Pro tier planned</li>
-            </ul>
-            <a href="https://softmobixbd.github.io/NumIQ" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[#8B5CF6] hover:text-white text-sm font-semibold transition-colors">
+            <a href="https://softmobixbd.github.io/numxross/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[#8B5CF6] hover:text-white text-sm font-semibold transition-colors">
                 Learn more <i class="fa-solid fa-arrow-right text-xs"></i>
             </a>
         </div>
 
         <!-- Skyguard -->
-        <div class="app-card relative overflow-hidden border border-[#221f4d] rounded-3xl p-6 fade-up">
+        <div class="app-card relative overflow-hidden border border-[#221f4d] rounded-3xl p-6 md:p-8 fade-up">
             <span class="ribbon absolute top-0 right-0 bg-slate-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1">Concept Stage</span>
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-600 via-blue-500 to-indigo-500 flex items-center justify-center mb-4 shadow-lg">
-                <i class="fa-solid fa-jet-fighter-up text-white text-lg"></i>
+            <div class="flex items-center gap-4 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-600 via-blue-500 to-indigo-500 flex items-center justify-center shadow-lg flex-shrink-0">
+                    <i class="fa-solid fa-jet-fighter-up text-white text-lg"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white">Skyguard</h3>
+                    <p class="text-[#a78bfa] text-sm font-medium">Our newest project, in design.</p>
+                </div>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2">Skyguard</h3>
             <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                Our newest project, currently in design. The team is deep in game &amp; technical design documentation and competitor research as we shape the core gameplay loop from the ground up.
+                The team is deep in game &amp; technical design documentation and competitor research as we shape the core gameplay loop from the ground up.
             </p>
             <ul class="text-xs text-slate-400 space-y-1.5 mb-5">
                 <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Game &amp; technical design in progress</li>
                 <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Competitor &amp; market analysis underway</li>
                 <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Prototype build early stage</li>
-            </ul>
-            <span class="inline-flex items-center gap-2 text-slate-500 text-sm font-semibold">
-                <i class="fa-solid fa-lock"></i> Details coming soon
-            </span>
-        </div>
-
-        <!-- NumXross -->
-        <div class="app-card relative overflow-hidden border border-[#221f4d] rounded-3xl p-6 fade-up">
-            <span class="ribbon absolute top-0 right-0 bg-amber-500 text-[#1E1B4B] text-[10px] font-bold uppercase tracking-wider px-3 py-1">In Development</span>
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-400 via-[#8B5CF6] to-[#312E81] flex items-center justify-center mb-4 shadow-lg">
-                <i class="fa-solid fa-table-cells text-white text-lg"></i>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">NumXross</h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                A crossword, reimagined in numbers. NumXross interlocks math equations across rows and columns — every shared cell has to satisfy both directions at once. Built in the spirit of classic crossmath-style puzzles, with our own daily challenges and fair monetization.
-            </p>
-            <ul class="text-xs text-slate-400 space-y-1.5 mb-5">
-                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Crossword-style math grids, 5 difficulty tiers</li>
-                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Daily puzzles, streaks &amp; coin-based hints</li>
-                <li><i class="fa-solid fa-check text-[#22D3EE] mr-2"></i>Offline core play, no forced ad-gating</li>
             </ul>
             <span class="inline-flex items-center gap-2 text-slate-500 text-sm font-semibold">
                 <i class="fa-solid fa-lock"></i> Details coming soon
@@ -388,7 +456,7 @@
                 SoftMobiXBD is a mobile app and game development studio based in Bangladesh, founded and led by <strong class="text-slate-200">Farjana Akter</strong>. We build interactive, meaningful digital experiences — games that are useful, enjoyable, and quietly educational.
             </p>
             <p class="text-slate-400 leading-relaxed mb-4">
-                With mobile screen time only growing, we set out to make it count. Every title we ship is designed to be fully offline-playable, free of intrusive monetization, and genuinely fun enough to open every day — whether that means sharpening algebra skills, training reflexes, or exercising logic.
+                With mobile screen time only growing, we set out to make it count. Today four of our games are live on Google Play — <strong class="text-slate-200">Quick Math Quest</strong>, <strong class="text-slate-200">Color Rush</strong>, <strong class="text-slate-200">NumIQ</strong> and <strong class="text-slate-200">Color Flood</strong> — with <strong class="text-slate-200">NumXross</strong> next in line. Each one is free to download, playable offline, free of intrusive monetization, and genuinely fun enough to open every day — whether that means sharpening algebra skills, training reflexes, or exercising logic.
             </p>
             <p class="text-slate-400 leading-relaxed">
                 Every app we ship comes with a dedicated privacy policy and terms of service — reviewed and published before it ever reaches Google Play.
@@ -412,7 +480,7 @@
                 <div class="bg-[#15123a]/60 badge border border-[#221f4d] rounded-2xl p-6 text-center">
                     <i class="fa-solid fa-wifi text-[#8B5CF6] text-xl mb-2"></i>
                     <div class="text-white font-semibold">Offline-first</div>
-                    <div class="text-xs text-slate-500">Every game, no exceptions</div>
+                    <div class="text-xs text-slate-500">Core play needs no internet</div>
                 </div>
                 <div class="bg-[#15123a]/60 badge border border-[#221f4d] rounded-2xl p-6 text-center">
                     <i class="fa-solid fa-graduation-cap text-[#8B5CF6] text-xl mb-2"></i>
@@ -473,14 +541,45 @@
             <a href="tel:+8801644426285" class="hover:text-[#8B5CF6] transition-colors duration-200"><i class="fa-solid fa-phone"></i></a>
         </div>
     </div>
-    <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 border-t border-[#1a1840]">
-        <div>&copy; <span id="year">2026</span> SoftMobiXBD. All rights reserved.</div>
-        <div class="flex flex-wrap gap-x-5 gap-y-2 justify-center">
-            <a href="https://softmobixbd.github.io/quickmath_about/quickmath_privacy_policy" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Quick Math Quest — Privacy</a>
-            <a href="https://softmobixbd.github.io/color_rush_about/privacy-policy.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Color Rush — Privacy</a>
-            <a href="https://softmobixbd.github.io/color_rush_about/terms.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Color Rush — Terms</a>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-6 pt-6 border-t border-[#1a1840]">
+        <div>
+            <div class="text-slate-400 font-semibold mb-2">Quick Math Quest</div>
+            <div class="flex flex-col gap-1.5">
+                <a href="https://softmobixbd.github.io/quickmath_about/quickmath_privacy_policy" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Privacy Policy</a>
+                <a href="https://softmobixbd.github.io/quickmath_about/quickmath_terms_conditions" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Terms &amp; Conditions</a>
+            </div>
+        </div>
+        <div>
+            <div class="text-slate-400 font-semibold mb-2">Color Rush</div>
+            <div class="flex flex-col gap-1.5">
+                <a href="https://softmobixbd.github.io/color_rush_about/privacy-policy.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Privacy Policy</a>
+                <a href="https://softmobixbd.github.io/color_rush_about/terms.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Terms of Service</a>
+            </div>
+        </div>
+        <div>
+            <div class="text-slate-400 font-semibold mb-2">NumIQ</div>
+            <div class="flex flex-col gap-1.5">
+                <a href="https://softmobixbd.github.io/NumIQ/privacy-policy.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Privacy Policy</a>
+                <a href="https://softmobixbd.github.io/NumIQ/terms-of-service.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Terms of Service</a>
+                <a href="https://softmobixbd.github.io/NumIQ/account-deletion.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Delete Account</a>
+            </div>
+        </div>
+        <div>
+            <div class="text-slate-400 font-semibold mb-2">Color Flood</div>
+            <div class="flex flex-col gap-1.5">
+                <a href="https://softmobixbd.github.io/color_flood_about/privacy_policy.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Privacy Policy</a>
+                <a href="https://softmobixbd.github.io/color_flood_about/terms.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Terms of Use</a>
+            </div>
+        </div>
+        <div>
+            <div class="text-slate-400 font-semibold mb-2">NumXross</div>
+            <div class="flex flex-col gap-1.5">
+                <a href="https://softmobixbd.github.io/numxross/privacy-policy.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Privacy Policy</a>
+                <a href="https://softmobixbd.github.io/numxross/terms-of-use.html" target="_blank" rel="noopener" class="hover:text-[#8B5CF6] transition-colors">Terms of Use</a>
+            </div>
         </div>
     </div>
+    <div class="text-center md:text-left pt-6 mt-6 border-t border-[#1a1840]">&copy; <span id="year">2026</span> SoftMobiXBD. All rights reserved.</div>
 </footer>
 
 <script>
